@@ -12,7 +12,7 @@ services:
       PHP_INI_DATE__TIMEZONE: Asia/Tokyo
       PHP_INI_MBSTRING__LANGUAGE: Japanese
       APACHE_DOCUMENT_ROOT: /var/www/html/public
-      VIRTUAL_HOST: 'laravel-vite.local'
+      VIRTUAL_HOST: 'kakkeibo.local'
     volumes:
       - '.:/var/www/html'
     networks:

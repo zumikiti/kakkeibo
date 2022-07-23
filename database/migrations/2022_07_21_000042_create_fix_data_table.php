@@ -21,6 +21,10 @@ return new class extends Migration
             $table->integer('price')->nullable()->comment('区分');
             $table->string('remarks')->nullable()->comment('メモ');
             $table->smallInteger('interval_month')->nullable()->comment('反映間隔(月)');
+
+            $table->integer('created_user_id')->nullable();
+            $table->integer('updated_user_id')->nullable();
+            $table->integer('deleted_user_id')->nullable();
             $table->timestamps();
         });
     }

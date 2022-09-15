@@ -4,13 +4,11 @@ namespace Tests\UnitActions\Item;
 
 use App\Actions\Item\CreateItem;
 use App\Models\Item;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Tests\TestCase;
+use ReflectionClass;
+use Tests\TestCaseWithDb;
 
-class CreateItemTest extends TestCase
+class CreateItemTest extends TestCaseWithDb
 {
-    use RefreshDatabase;
-
     public function testCreate()
     {
        $input = Item::factory()->make()->toArray();
